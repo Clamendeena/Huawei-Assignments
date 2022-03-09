@@ -1,0 +1,20 @@
+The NULL pointer is a constant with a value of zero defined in several standard libraries, including iostream. Consider the following program −
+
+Live Demo
+#include <iostream>
+
+using namespace std;
+int main () {
+   int  *ptr = NULL;
+   cout << "The value of ptr is " << ptr ;
+ 
+   return 0;
+}
+When the above code is compiled and executed, it produces the following result −
+
+The value of ptr is 0
+
+Some uses of the null pointer are:
+a) To initialize a pointer variable when that pointer variable isn't assigned any valid memory address yet. 
+b) To pass a null pointer to a function argument when we don't want to pass any valid memory address.
+c) To check for null pointer before accessing any pointer variable.
